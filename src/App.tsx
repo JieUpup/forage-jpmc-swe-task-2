@@ -67,13 +67,16 @@ class App extends Component<{}, IState> {
           Bank & Merge Co Task 2
         </header>
         <div className="App-content">
-          <button className="btn btn-primary Stream-button"
+          <button className="btn btn-primary Stream-button" onClick={this.handleButtonClick}>
+            Click Me
+          </button>
           <div className="Graph">
             {this.renderGraph()}
           </div>
         </div>
       </div>
-    )
+    );
+  }
 }
 
 export default App;
